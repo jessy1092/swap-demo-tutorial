@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "bignumber.js": "^9.1.0",
+    "qs": "^6.11.0"
+  },
+  "browserify-shim": {
+    "web3": "global:web3"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "scripts": {
+    "bundle": "browserify index.js --standalone bundle -o bundle.js"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "browserify-shim": "^3.8.15"
+  }
+}
